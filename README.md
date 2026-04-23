@@ -4,13 +4,14 @@ A lightweight, cross-platform desktop application for viewing and exploring Parq
 
 ## Features
 
-- 📊 **Data Tab**: Browse Parquet data with pagination support
-- 🏛️ **Schema Tab**: View column names, data types, and statistics
-- 📈 **Statistics Tab**: Detailed statistics for each column
-- 🔍 **Search Tab**: Filter data by column values
-- 💾 **Export**: Save to CSV or Excel (.xlsx) formats
-- ⚡ **Performance**: Handles large files (260MB+) efficiently
-- 📦 **Standalone**: Single executable, no dependencies required
+- **Data Tab**: Browse Parquet data with pagination support
+- **Schema Tab**: View column names, data types, and statistics
+- **Statistics Tab**: Detailed statistics for each column
+- **Search Tab**: Filter data by column values
+- **Export**: Save to CSV or Excel (.xlsx) formats
+- **Performance**: Handles large files efficiently
+
+![Alt text](image/preview.png)
 
 ## Quick Start
 
@@ -135,17 +136,6 @@ python parquet_viewer.py
 - ✅ Clear error messages
 - ✅ Continues operation even with problematic cells
 
-## Comparison to Other Tools
-
-| Feature | ParquetViewer | Excel | DBeaver |
-|---------|---------------|-------|---------|
-| Parquet Support | ✅ | ❌ | ⚠️ |
-| Single Executable | ✅ | ❌ | ❌ |
-| No Dependencies | ✅ | N/A | ❌ |
-| Excel Export | ✅ | N/A | ✅ |
-| Open Source | ✅ | ❌ | ✅ |
-| File Size Limit | 10GB+ | 1M rows | Unlimited |
-| Price | Free | $$$$ | Free |
 
 ## Architecture
 
@@ -244,16 +234,6 @@ class ParquetViewer(QMainWindow):
     def export_excel()            # Excel export
 ```
 
-### Ideas for Enhancements
-- [ ] Column sorting by clicking headers
-- [ ] Multi-column filtering
-- [ ] SQL query interface
-- [ ] Dark mode theme
-- [ ] Favorites/recent files
-- [ ] Drag & drop file opening
-- [ ] Row details modal
-- [ ] Data profiling report
-
 ## Performance
 
 ### Tested With
@@ -283,21 +263,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Support
-
-For issues, questions, or suggestions, please:
-1. Check existing GitHub issues
-2. Create a new issue with detailed information
-3. Include screenshots if possible
-
-## Roadmap
-
-- [ ] Cross-platform build (macOS, Linux executables)
-- [ ] Advanced filtering options
-- [ ] Custom column formatting
-- [ ] Data type detection and validation
-- [ ] Performance optimizations for very large files
-- [ ] Plugin system for custom viewers
 
 ## Acknowledgments
 
@@ -321,4 +286,3 @@ For issues, questions, or suggestions, please:
 
 ---
 
-**Made with ❤️ for data professionals**
